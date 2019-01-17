@@ -6,10 +6,10 @@ class Navbar extends React.Component {
     render() {
         return (
             <div>
-                <nav>
-                    <p className="navbar-brand" href="#">
-                        <Link to="/"><img src={logo} className="App-logo" alt="logo" /></Link>
-                    </p>
+                <nav className="navbar navbar-expand-lg">
+                    <Link to="/"><img src={logo} className="App-logo" alt="logo" /></Link>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    </div>
                 </nav>
             </div>
         );

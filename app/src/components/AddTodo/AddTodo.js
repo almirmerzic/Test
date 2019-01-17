@@ -1,7 +1,9 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import {addTodo} from '../../actions/actions';
 
 class AddTodo extends React.Component {
+
     constructor() {
         super();
         this.state = {
@@ -22,17 +24,21 @@ class AddTodo extends React.Component {
         return (
             <div>
                 <form>
-                    <div className="form-group row">
-                        <label className="col-sm-2 col-form-label">Todo</label>
-                        <div className="col-sm-10">
-                            <input type="text" className="form-control" value={this.state.todo} onChange={this.getTodo} />
+                        <div className="form-group row">
+                            <label className="col-sm-2 col-form-label">Todo</label>
+                            <div className="col-sm-10">
+                                <input type="text" className="form-control" value={this.state.todo} onChange={this.getTodo} />
+                            </div>
                         </div>
-                    </div>
-                    <button onClick={this.sendTodo} class="btn btn-primary">Submit</button>
-                </form>
+                        <div className="form-group row">
+                            <div className="col-sm-10">
+                                <button type="button" onClick={this.sendTodo} className="btn btn-primary">Add Todo</button>
+                            </div>
+                        </div>
+                    </form>
             </div>
         );
     }
 }
 
-export default AddTodo;
+export default connect()(AddTodo);
