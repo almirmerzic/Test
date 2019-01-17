@@ -9,7 +9,7 @@ class Home extends React.Component {
                 <div>
                     <Navbar />
                 </div>
-                <div>
+                <div className="container mt-5">
                     <AddTodo />
                 </div>
 

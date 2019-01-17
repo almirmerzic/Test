@@ -25,9 +25,8 @@ class AddTodo extends React.Component {
             <div>
                 <form>
                         <div className="form-group row">
-                            <label className="col-sm-2 col-form-label">Todo</label>
                             <div className="col-sm-10">
-                                <input type="text" className="form-control" value={this.state.todo} onChange={this.getTodo} />
+                            <input type="text" placeholder="Enter Todo..." className="form-control" value={this.state.todo} onChange={this.getTodo} />
                             </div>
                         </div>
                         <div className="form-group row">
@@ -35,7 +34,7 @@ class AddTodo extends React.Component {
                                 <button type="button" onClick={this.sendTodo} className="btn btn-primary">Add Todo</button>
                             </div>
                         </div>
-                    </form>
+                </form>
             </div>
         );
     }
