@@ -12,7 +12,7 @@ class Home extends React.Component {
                 <div className="container mt-5">
                     <AddTodo />
                 </div>
-
+                
             </div>
         );
     }
