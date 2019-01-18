@@ -9,3 +9,10 @@ export function addTodo(todo) {
         todos: { ...todo, id: todoId++ }
     };
 }
+
+export function removeTodo(id) {
+    return {
+        type: REMOVE_TODO,
+        id
+    };
+}
