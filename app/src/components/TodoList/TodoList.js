@@ -33,6 +33,7 @@ class TodoList extends React.Component {
 }
 
 function mapStateToProps(state) {
+    console.log(state);
     return {
         todos: state.todos.todos
     }

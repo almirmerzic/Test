@@ -16,7 +16,12 @@ class AddTodo extends React.Component {
     getTodo = (e) => this.setState({ todo: e.target.value });
 
     sendTodo = () => {
-      this.props.dispatch(addTodo(this.state.todo));
+      
+      let data={
+          todo:this.state.todo
+      }
+
+      this.props.dispatch(addTodo(data));
       this.setState({ todo: '' })
     }
 

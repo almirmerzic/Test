@@ -12,7 +12,6 @@ render() {
         <tbody>
             <tr>
                 <td>{this.props.todo}</td>
-                <td>{this.props.todoDesc}</td>
                 <td><button onClick={this.remove}>Delete</button></td>
             </tr>
         </tbody>
