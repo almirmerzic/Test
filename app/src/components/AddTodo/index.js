@@ -32,8 +32,8 @@ class AddTodo extends React.Component {
                         <input type="text" placeholder="Enter Todo..." className="form-control" value={this.state.todo} onChange={this.getTodo} />
                     </div>
                     <div class="col-lg-2 col-sm-4">{this.state.id != null
-                        ? <button type="button" onClick={this.editTodo} className="w-100 btn btn-success"><i className="fas fa-save"></i> Update Todo</button>
-                        : <button type="button" onClick={this.sendTodo} className="w-100 btn btn-primary"><i className="fas fa-plus-circle"></i> Add Todo</button>
+                        ? <button type="button" onClick={this.editTodo} className="w-100 btn btn-success"><i className="fas fa-save"></i> Update</button>
+                        : <button type="button" onClick={this.sendTodo} className="w-100 btn btn-primary"><i className="fas fa-plus-circle"></i> Add</button>
                     }</div>
                 </div>
             </form>
