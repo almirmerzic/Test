@@ -6,7 +6,7 @@ import { render } from 'react-dom'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import * as serviceWorker from './serviceWorker';
-import todoApp from './reducers/reducers'
+import todoApp from './reducers'
 
 let store = createStore(todoApp)
 let rootElement = document.getElementById('root')
