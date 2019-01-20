@@ -5,7 +5,7 @@ import TodoList from './components/TodoList';
 import AddTodo from './components/AddTodo';
 import { addTodo, editTodo, removeTodo, setTodo, filterTodo } from './actions';
 
-const App = ({ todoReducer, removeTodo, addTodo, editTodo, setTodo, filterTodo }) => (
+const App = ({ todoReducer, addTodo, removeTodo, editTodo, setTodo, filterTodo }) => (
     <div>
         <Navbar />
         <AddTodo
