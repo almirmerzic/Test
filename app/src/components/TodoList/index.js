@@ -18,7 +18,7 @@ export default class TodoList extends Component {
             <div className="container">
             <div className="row">
                 <div className="col-lg-8 col-sm-6 col-6">
-                    <h2>Todo</h2>
+                    <h5 className="mt-2">Todo</h5>
                 </div>
                 <div className="col-lg-4 col-sm-6 col-6">
                     <select onChange={this.onChange} value={this.state.value} className="custom-select">
